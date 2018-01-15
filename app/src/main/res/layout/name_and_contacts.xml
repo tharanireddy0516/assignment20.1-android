@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--xml layer starts here
+xml stands for extensible markup language
+it is a background code of layouts,widges etc-->
+<!--Linear layout is one of the types of layout
+It aligns views one by one that is by vertically/horizontally
+layout_width indicates the width of the Linear layout
+layout_Height indicates the height of the Linear layout
+context indicates the package name of the respective java class
+match parent will take complete height or width of text
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--Here taking text view for displaying contact_name
+           TextView is one of component of palette to display anything on layout
+           width indicates the width of the TextView
+           Height indicates the height of the TextView
+           wraps content wraps the enter content
+           textColor indicates color of text
+            layout_marginBottom,paddingLeft indicates directions-->
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="4dp"/>
+        <!--Here taking text view for displaying contact_number
+             TextView is one of component of palette to display anything on layout
+             width indicates the width of the TextView
+             Height indicates the height of the TextView
+              wraps content wraps the enter content
+             layout_height indicates directions-->
+        <TextView
+            android:id="@+id/contact_number"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout><!--LinearLayout ends here-->

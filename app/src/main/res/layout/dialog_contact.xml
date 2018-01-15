@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><!--xml layer starts here
+xml stands for extensible markup language
+it is a background code of layouts,widges etc-->
+<!--Linear layout is one of the types of layout
+It aligns views one by one that is by vertically/horizontally
+layout_width indicates the width of the Linear layout
+layout_Height indicates the height of the Linear layout
+context indicates the package name of the respective java class
+match parent will take complete height or width of text
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--Here taking text view for displaying contact details
+        TextView is one of component of palette to display anything on layout
+        width indicates the width of the TextView
+        Height indicates the height of the TextView
+        wraps content wraps the enter content
+        layout_margin indicates directions-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/enter_contact_details"
+        android:textColor="#76caec"
+        android:textSize="18sp"/>
+    <!--Here taking edittext for contact_name
+    EditText is one of component of palette to display anything on layout
+      by using EditText we can edit anything or write anything
+       width indicates the width of the TextView
+       Height indicates the height of the TextView
+       wraps content wraps the enter content-->
+    <EditText
+        android:id="@+id/diag_contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/name" />
+    <!--Here taking edittext for phone_number
+    EditText is one of component of palette to display anything on layout
+      by using EditText we can edit anything or write anything
+       width indicates the width of the TextView
+       Height indicates the height of the TextView
+       wraps content wraps the enter content-->
+    <EditText
+        android:id="@+id/diag_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/phone_number"/>
+
+
+</LinearLayout><!--LinearLayout ends here-->

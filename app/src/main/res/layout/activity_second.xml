@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--xml layer starts here
+xml stands for extensible markup language
+it is a background code of layouts,widges etc-->
+<!--Relative layout is one of the types of layout
+It enables to specify the location of child objects relative to each other
+layout_width indicates the width of the relative layout
+layout_Height indicates the height of the relative layout
+context indicates the package name of the respective java class
+match parent will take complete height or width of text
+-->
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tharani.contactsinsert.SecondActivity">
+    <!--ListView is a view group that displays a list of scrollable items
+    layout_width indicates the width of the listView
+    layout_Height indicates the height of the listView-->
+    <ListView
+        android:id="@+id/lstNames"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout><!--RelativeLayout ends here-->

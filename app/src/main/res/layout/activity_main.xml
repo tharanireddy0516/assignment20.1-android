@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><!--xml layer starts here
+xml stands for extensible markup language
+it is a background code of layouts,widges etc-->
+    <!--Relative layout is one of the types of layout
+    It enables to specify the location of child objects relative to each other
+    layout_width indicates the width of the relative layout
+    layout_Height indicates the height of the relative layout
+    context indicates the package name of the respective java class
+    match parent will take complete height or width of text
+    -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tharani.contactsinsert.MainActivity">
+    <!--Here taking text view for displaying Location
+                TextView is one of component of palette to display anything on layout
+                width indicates the width of the TextView
+                Height indicates the height of the TextView
+                wraps content wraps the enter content
+                layout_margin,layout_centerHorizontal indicates directions-->
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/content_provider_app" />
+    <!--Here taking button to add contact
+     Button is a widget or view
+     layout_marginBottom,layout_centerHorizontal indicates direction of button
+     layout_width indicates width of button
+     layout_height indicates height of button
+     -->
+    <Button
+        android:id="@+id/buttonADD"
+        android:layout_below="@+id/tv_contact"
+        android:layout_marginBottom="5dp"
+        android:text="@string/add_contact"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--Here taking button to View_all_contacts
+    Button is a widget or view
+    layout_marginBottom,layout_centerHorizontal indicates direction of button
+    layout_width indicates width of button
+    layout_height indicates height of button
+    -->
+    <Button
+        android:id="@+id/buttonViewAll"
+        android:layout_below="@+id/buttonADD"
+        android:layout_marginBottom="5dp"
+        android:text="@string/view_all_contact"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout><!--Relative layout ends here-->

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ContactsInsert</string>
+    <string name="add_contact">ADD CONTACT</string>
+    <string name="view_all_contact">View All CONTACT</string>
+    <string name="content_provider_app">CONTENT PROVIDER APP</string>
+    <string name="enter_contact_details">Enter Contact Details</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="name">Name</string>
+</resources>
