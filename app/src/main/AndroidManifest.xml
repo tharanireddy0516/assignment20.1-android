@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tharani.contactsinsert">
-
+    <!--manifest acts as metadata,declares all attributes of activity tags,permissions,services,broadcast receivers
+        tells a behavior of app-->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!--taking permissions to read and write contacts-->
 
     <application
         android:allowBackup="true"
@@ -18,6 +20,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!--An intent filter declares the capabilities of its parent component or screen
+              it tells a what an activity or service can do and what types of broadcasts a receiver can handle-->
         </activity>
         <activity android:name=".SecondActivity"></activity>
     </application>
